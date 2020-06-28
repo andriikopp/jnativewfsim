@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d18deba7-bfb1-4404-941a-f438d8b3a400" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/jnativewfsim/util/WorkflowBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/jnativewfsim/util/WorkflowBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/jnativewfsim/util/WorkflowBuilderTest.java" afterPath="$PROJECT_DIR$/src/main/java/jnativewfsim/util/WorkflowBuilderTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/jnativewfsim/util/WorkflowTask.java" afterPath="$PROJECT_DIR$/src/main/java/jnativewfsim/util/WorkflowTask.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/jnativewfsim/util/WorkflowPattern.java" afterPath="$PROJECT_DIR$/src/main/java/jnativewfsim/util/WorkflowConstruct.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,8 +19,8 @@
       <file leaf-file-name="WorkflowBuilderTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/jnativewfsim/util/WorkflowBuilderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="30" column="30" lean-forward="true" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+            <state relative-caret-position="256">
+              <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -33,11 +29,11 @@
       <file leaf-file-name="WorkflowBuilder.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/jnativewfsim/util/WorkflowBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+            <state relative-caret-position="433">
+              <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
               <folding>
-                <element signature="e#3875#3876#0" expanded="true" />
-                <element signature="e#3921#3922#0" expanded="true" />
+                <element signature="e#3895#3896#0" expanded="true" />
+                <element signature="e#3941#3942#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -521,27 +517,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jnativewfsim/util/WorkflowProcess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        <state relative-caret-position="96">
+          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jnativewfsim/util/WorkflowBuilderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="30" column="30" lean-forward="true" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+        <state relative-caret-position="256">
+          <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jnativewfsim/util/WorkflowBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+        <state relative-caret-position="433">
+          <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
           <folding>
-            <element signature="e#3875#3876#0" expanded="true" />
-            <element signature="e#3921#3922#0" expanded="true" />
+            <element signature="e#3895#3896#0" expanded="true" />
+            <element signature="e#3941#3942#0" expanded="true" />
           </folding>
         </state>
       </provider>

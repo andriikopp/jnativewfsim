@@ -73,7 +73,7 @@ public final class WorkflowBuilder {
             }
         }
 
-        return constructs[0];
+        return constructs[constructs.length - 1];
     }
 
     /**
