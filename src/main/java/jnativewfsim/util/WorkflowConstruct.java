@@ -3,16 +3,16 @@ package jnativewfsim.util;
 import java.util.List;
 
 /**
- * Workflow Pattern
+ * Workflow Construct
  * <p>
  * This class describes a certain workflow pattern (sequence, exclusive or parallel execution of tasks).
  *
  * @author Andrii Kopp
  */
-public class WorkflowPattern {
+public class WorkflowConstruct {
     private List<String> tasksList;
 
-    public WorkflowPattern(List<String> tasksList) {
+    public WorkflowConstruct(List<String> tasksList) {
         this.tasksList = tasksList;
     }
 

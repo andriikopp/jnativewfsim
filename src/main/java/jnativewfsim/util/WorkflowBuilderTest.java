@@ -17,8 +17,8 @@ public final class WorkflowBuilderTest {
         // generate 100 workflow cases
         for (int instance = 1; instance <= 100; instance++)
             run(instance,
-                    sequence(
-                            exclusive(
+                    process("Dispatch of Goods",
+                            exclusive(probabilities(30, 70),
                                     sequence(
                                             parallel(
                                                     task("Request Bid Shipping Company 1"),
@@ -31,7 +31,7 @@ public final class WorkflowBuilderTest {
                             ),
                             task("Package Label"),
                             task("Determine Insurance"),
-                            exclusive(
+                            exclusive(probabilities(40, 60),
                                     task("Insurance Taken"),
                                     task("Insurance Not Taken")
                             ),

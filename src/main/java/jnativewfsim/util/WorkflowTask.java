@@ -9,7 +9,7 @@ import java.util.Arrays;
  *
  * @author Andrii Kopp
  */
-public class WorkflowTask extends WorkflowPattern {
+public class WorkflowTask extends WorkflowConstruct {
 
     public WorkflowTask(String label) {
         super(Arrays.asList(label));
