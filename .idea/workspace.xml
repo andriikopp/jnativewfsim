@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d18deba7-bfb1-4404-941a-f438d8b3a400" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/jnativewfsim/util/WorkflowBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/jnativewfsim/util/WorkflowBuilder.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,8 +20,8 @@
       <file leaf-file-name="WorkflowBuilderTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/jnativewfsim/util/WorkflowBuilderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+            <state relative-caret-position="193">
+              <caret line="20" column="60" lean-forward="true" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -29,11 +30,11 @@
       <file leaf-file-name="WorkflowBuilder.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/jnativewfsim/util/WorkflowBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+            <state relative-caret-position="257">
+              <caret line="71" column="37" lean-forward="true" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
               <folding>
-                <element signature="e#3895#3896#0" expanded="true" />
-                <element signature="e#3941#3942#0" expanded="true" />
+                <element signature="e#3900#3901#0" expanded="true" />
+                <element signature="e#3946#3947#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,8 +71,8 @@
         <option value="$PROJECT_DIR$/src/main/java/jnativewfsim/util/WorkflowPattern.java" />
         <option value="$PROJECT_DIR$/src/main/java/jnativewfsim/util/WorkflowConstruct.java" />
         <option value="$PROJECT_DIR$/src/main/java/jnativewfsim/util/WorkflowProcess.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jnativewfsim/util/WorkflowBuilderTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/jnativewfsim/util/WorkflowBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jnativewfsim/util/WorkflowBuilderTest.java" />
       </list>
     </option>
   </component>
@@ -525,19 +526,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jnativewfsim/util/WorkflowBuilderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        <state relative-caret-position="193">
+          <caret line="20" column="60" lean-forward="true" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jnativewfsim/util/WorkflowBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+        <state relative-caret-position="257">
+          <caret line="71" column="37" lean-forward="true" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
           <folding>
-            <element signature="e#3895#3896#0" expanded="true" />
-            <element signature="e#3941#3942#0" expanded="true" />
+            <element signature="e#3900#3901#0" expanded="true" />
+            <element signature="e#3946#3947#0" expanded="true" />
           </folding>
         </state>
       </provider>

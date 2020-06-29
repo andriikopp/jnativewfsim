@@ -62,7 +62,7 @@ public final class WorkflowBuilder {
             throw new IllegalArgumentException("The sum of probabilities should be equal to 100.");
         }
 
-        double rand = Math.floor(Math.random() * 100) + 1;
+        int rand = (int) (Math.floor(Math.random() * 100) + 1);
         int total = 0;
 
         for (int i = 0; i < probabilities.size(); i++) {
