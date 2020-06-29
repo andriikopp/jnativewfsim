@@ -31,7 +31,7 @@ public final class WorkflowBuilderTest {
                                             task("Request Bid Shipping Company 2"),
                                             task("Request Bid Shipping Company 3")
                                     ),
-                                    
+
                                     task("Choose Company")
                             ),
                             task("Normal Post")
@@ -58,5 +58,7 @@ public final class WorkflowBuilderTest {
         }
 
         System.out.println(log);
+
+        log.saveWorkflowTraces("Dispatch of Goods");
     }
 }
