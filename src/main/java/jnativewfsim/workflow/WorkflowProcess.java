@@ -1,4 +1,4 @@
-package jnativewfsim.util;
+package jnativewfsim.workflow;
 
 /**
  * Workflow Process

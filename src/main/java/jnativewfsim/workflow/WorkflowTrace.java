@@ -1,4 +1,4 @@
-package jnativewfsim.util;
+package jnativewfsim.workflow;
 
 import java.util.ArrayList;
 import java.util.List;

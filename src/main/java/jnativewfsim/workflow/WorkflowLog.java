@@ -1,4 +1,4 @@
-package jnativewfsim.util;
+package jnativewfsim.workflow;
 
 import org.camunda.bpm.model.bpmn.Bpmn;
 import org.camunda.bpm.model.bpmn.BpmnModelInstance;
