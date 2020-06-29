@@ -23,4 +23,9 @@ public class WorkflowTask extends WorkflowConstruct {
     public String getLabel() {
         return getTasksList().get(0);
     }
+
+    @Override
+    public String toString() {
+        return getLabel();
+    }
 }

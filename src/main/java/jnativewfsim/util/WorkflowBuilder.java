@@ -19,25 +19,48 @@ public final class WorkflowBuilder {
     /**
      * Takes already prepared patterns and organizes them as parallel executed pieces of a business process.
      *
+     * @param timing     - the assumptions for parallel tasks completion order;
      * @param constructs - the array of workflow patterns to be organized as parallel pieces of a process.
      * @return the parallel tasks workflow pattern.
      */
-    public static WorkflowConstruct parallel(WorkflowConstruct... constructs) {
+    public static WorkflowConstruct parallel(List<Integer> timing, WorkflowConstruct... constructs) {
+        if (timing.size() != constructs.length) {
+            throw new IllegalArgumentException("Timing should match the parallel constructs.");
+        }
+
         List<String>[] array = new List[constructs.length];
 
         for (int i = 0; i < constructs.length; i++) {
             array[i] = constructs[i].getTasksList();
         }
 
-        List<List<String>> list = Arrays.asList(array);
-        Collections.shuffle(list);
         List<String> output = new ArrayList<>();
 
-        for (List<String> tasks : list) {
-            output.addAll(tasks);
+        for (int order : timing) {
+            if (order < 1 || order > constructs.length) {
+                throw new IllegalArgumentException("Invalid timing orders for parallel constructs.");
+            }
+
+            output.addAll(constructs[order - 1].getTasksList());
         }
 
         return new WorkflowConstruct(output);
+    }
+
+    /**
+     * Takes the timing assumptions for parallel tasks used to define their possible completion order.
+     *
+     * @param order - the timing assumptions for parallel tasks.
+     * @return the list of parallel tasks completion order.
+     */
+    public static List<Integer> timing(int... order) {
+        List<Integer> output = new ArrayList<>();
+
+        for (int rank : order) {
+            output.add(rank);
+        }
+
+        return output;
     }
 
     /**
@@ -139,5 +162,27 @@ public final class WorkflowBuilder {
         for (String task : process.getTasksList()) {
             System.out.println(String.format("%d\t%s\t%s", instance, process.getTitle(), task));
         }
+    }
+
+    /**
+     * Organizes the workflow trace - a sequence of task identifiers (labels) according to its execution.
+     *
+     * @param log     - the process log to which traces are added;
+     * @param process - the workflow definition.
+     */
+    public static void trace(WorkflowLog log, WorkflowProcess process) {
+        WorkflowTrace trace = new WorkflowTrace();
+
+        for (String task : process.getTasksList()) {
+            trace.getTrace().add(task(task));
+        }
+
+        Integer value = log.getLog().get(trace);
+
+        if (value == null) {
+            value = 0;
+        }
+
+        log.getLog().put(trace, value + 1);
     }
 }
