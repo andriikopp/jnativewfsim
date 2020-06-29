@@ -32,7 +32,12 @@ public final class WorkflowBuilderTest {
                             task("Package Label"),
                             task("Determine Insurance"),
                             exclusive(probabilities(40, 60),
-                                    task("Insurance Taken"),
+
+                                    // using sub-process in a described process structure
+                                    process("Insurance Process",
+                                            task("Insurance Taken")
+                                    ),
+
                                     task("Insurance Not Taken")
                             ),
                             task("Prepare for pickup")
