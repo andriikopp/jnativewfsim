@@ -137,7 +137,7 @@ public final class WorkflowBuilder {
      */
     public static void run(int instance, WorkflowProcess process) {
         for (String task : process.getTasksList()) {
-            System.out.println(String.format("%d\t%s\t%s\t%s", instance, process.getTitle(), task, System.nanoTime()));
+            System.out.println(String.format("%d\t%s\t%s", instance, process.getTitle(), task));
         }
     }
 }
