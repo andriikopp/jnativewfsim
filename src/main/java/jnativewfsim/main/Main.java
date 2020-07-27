@@ -1,10 +1,11 @@
 package jnativewfsim.main;
 
-import jnativewfsim.main.workflows.DispatchOfGoods;
+import jnativewfsim.main.workflows.OrderProcess;
 import jnativewfsim.workflow.WorkflowLog;
 import jnativewfsim.workflow.WorkflowProcess;
 
-import static jnativewfsim.workflow.WorkflowBuilder.*;
+import static jnativewfsim.workflow.WorkflowBuilder.run;
+import static jnativewfsim.workflow.WorkflowBuilder.trace;
 
 /**
  * Testing Workflow Builder
@@ -20,10 +21,10 @@ public final class Main {
         // organize the process log as a multiset of traces
         WorkflowLog log = new WorkflowLog();
 
-        // run Dispatch Goods business process in order to generate its footprints
+        // run business process in order to generate its footprints
         // generate 100 workflow cases
         for (int instance = 1; instance <= 100; instance++) {
-            WorkflowProcess process = new DispatchOfGoods().structure();
+            WorkflowProcess process = new OrderProcess().structure();
 
             // run process tracing
             run(instance, process);
@@ -34,6 +35,6 @@ public final class Main {
 
         System.out.println(log);
 
-        log.saveWorkflowTraces("Dispatch of Goods");
+        log.saveWorkflowTraces("Order Process");
     }
 }
